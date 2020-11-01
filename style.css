@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 .main-container{
     max-width: 1180px;
@@ -12,7 +13,7 @@
 .main-container .inner-container{
     width: 960px;
      margin: 0 auto;
-     
+     position: relative;
 }
 .main-container header{
     margin-bottom: 45px;
@@ -31,8 +32,7 @@
 }
 .main-container header .header-top .header-top-right .header-paragraph span{
     font-size: 17px;
-    color: #a01d20;
-    font-family: 'Open Sans', sans-serif;
+    color: #a01d20;   
     font-weight:bold ;
     margin-bottom: 9px;
     padding-left: 20px;
@@ -75,46 +75,161 @@
 .main-container .navigation .lorem-ipsum-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 1;
+    top:-263px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-one{
+.main-container .navigation .lorem-ipsum-box:hover{
+    position: relative;
+    bottom: 40px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box{
     background-color: rgba(0, 0, 0, 0.5);
     height: 284px;
     display: grid;
     grid-template-rows: 58px 100px auto ;
     grid-gap: 36px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-one h1{
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box h1{
     color: #ffffff;
     font-size: 20px;
-    padding-left: 40px;
+    align-self: flex-end;
+    
+    font-weight: bold;
+    padding: 0 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-one p{
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box p{
     color:#ffffff;
     font-size: 16px;
+    /*  */
+    padding: 0 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-one button{
-
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box button{
+    background-color: #9c1a1e;
+    color: #ffffff;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 16px auto;
+    align-items: center;
+    height:54px;
+    grid-gap: 8px;
+    justify-content: left;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}/*
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 284px;
+    display: grid;
+    grid-template-rows: 58px 100px auto ;
+    grid-gap: 36px;
 }
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 284px;
+    display: grid;
+    grid-template-rows: 58px 100px auto ;
+    grid-gap: 36px;
+    bottom: 40px;
+    position: absolute;
+    
+    width: 320px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two h1{
+    color: #ffffff;
+    font-size: 20px;
+    align-self: flex-end;
+    
+    font-weight: bold;
+    padding: 0 40px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two p{
+    color:#ffffff;
+    font-size: 16px;
+    
+    padding: 0 40px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two button{
+    background-color: #9c1a1e;
+    color: #ffffff;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 16px auto;
+    align-items: center;
+    grid-gap: 8px;
+    justify-content: left;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 284px;
+    display: grid;
+    grid-template-rows: 58px 100px auto ;
+    grid-gap: 36px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 284px;
+    display: grid;
+    width: 234px;
+    grid-template-rows: 58px 100px auto ;
+    grid-gap: 36px;
+    bottom: 40px;
+    position: absolute;
+    right: 0px;
+    width: 320px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three h1{
+    color: #ffffff;
+    font-size: 20px;
+    align-self: flex-end;
+    
+    font-weight: bold;
+    padding: 0 40px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three p{
+    color:#ffffff;
+    font-size: 16px;
+    
+    padding: 0 40px;
+}
+.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three button{
+    background-color: #9c1a1e;
+    color: #ffffff;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 16px auto;
+    align-items: center;
+    grid-gap: 8px;
+    justify-content: left;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+} */
 .main-container .banner{
     background: url(images/banner-pic.png);
     height: 561px;
+    z-index: 2;
 }
 .main-container .banner .banner-paragraph{
     display: grid;
     grid-template-columns: auto 310px;
     grid-gap: 30px;
-}
-.main-container .banner .banner-paragraph .paragraph {
-    padding-top: 50px;
+    padding-top: 43px;
 }
 .main-container .banner .banner-paragraph .paragraph h1{
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 40px;
     color: #ffffff;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;   
 }
-
 .main-container .banner .banner-paragraph .paragraph h1 span{
     color:#b52e32;
 }
@@ -125,7 +240,7 @@
     font-style: italic;
 }
 .main-container .banner .banner-paragraph .paragraph p{
-    margin-bottom: 35px;
+    margin-bottom: 27px;
     font-size:16px;
     color: #cccccc;
 }
@@ -133,12 +248,12 @@
     margin-bottom: 0px;
 }
 .main-container .banner .banner-paragraph .menu-icon{
-    padding-top: 130px;
+    align-self: flex-end;
 }
 .main-container .banner .banner-paragraph .menu-icon h1{
     font-size: 20px;
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -176,6 +291,7 @@
     align-items: center;
     justify-content: center;
     grid-gap: 5px;
+    cursor: pointer;
 }
 .main-container .banner .banner-paragraph .menu-icon button i{
     margin-right: 20px;
@@ -198,7 +314,7 @@
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 31px;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 .main-container .contact .inner-contact .inner-contact-left h2 span{
     color: #890e12;
@@ -304,6 +420,8 @@
     align-items: center;
     justify-content: center;
     grid-gap: 5px;
+    outline: none;
+    cursor: pointer;
 }
 .main-container .contact .inner-contact .inner-contact-right .fouth-box button img{
     padding-right: 5px;
