@@ -17,32 +17,38 @@
 }
 .main-container header{
     margin-bottom: 45px;
-}
-.main-container header .header-top{
-    display: grid;
-    grid-template-columns: auto 1fr;
     padding-top: 55px;
 }
-.main-container header .header-top .header-top-right{
+.main-container header .inner-container{
+    display: grid;
+    grid-template-columns: auto 1fr;   
+}
+.main-container header .inner-container img{
+    align-self: center;
+}
+.main-container header .header-contact-right{
     justify-self: right;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 17px;
     align-items: center;
 }
-.main-container header .header-top .header-top-right .header-paragraph span{
+.main-container header .header-contact-right .header-paragraph{
+    text-align: end;
+}
+.main-container header .header-contact-right .header-paragraph span{
     font-size: 17px;
     color: #a01d20;   
     font-weight:bold ;
-    margin-bottom: 9px;
     padding-left: 20px;
 }
-.main-container header .header-top .header-top-right .header-paragraph p{
+.main-container header .header-contact-right .header-paragraph p{
     font-size: 25px;
     color: #666666;
 }
-.main-container header .header-top .header-top-right .header-icon i{
+.main-container header .header-contact-right i{
     font-size: 48px;
+    color: black;
 }
 .main-container .navigation{
     background:url(images/navigation-pic.png);
@@ -54,8 +60,7 @@
 .main-container .navigation .navigation-menu{
     background-color: #e2e4e4;
     height: 59px;
-    line-height: 59px;
-   
+    line-height: 59px;   
 }
 .main-container .navigation .navigation-menu ul li{
     display: inline-block;
@@ -72,25 +77,25 @@
     text-decoration: none;
     color:#2b2c2d;
 }
-.main-container .navigation .lorem-ipsum-grid{
+.main-container .navigation .slider-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top:-263px;
+    bottom:-25px
 }
-.main-container .navigation .lorem-ipsum-box:hover{
+.main-container .navigation .slider-box:hover{
     position: relative;
     bottom: 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box{
+.main-container .navigation .slider-grid .slider-box{
     background-color: rgba(0, 0, 0, 0.5);
     height: 284px;
     display: grid;
     grid-template-rows: 58px 100px auto ;
     grid-gap: 36px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box h1{
+.main-container .navigation .slider-grid .slider-box h1{
     color: #ffffff;
     font-size: 20px;
     align-self: flex-end;
@@ -98,7 +103,7 @@
     font-weight: bold;
     padding: 0 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box p{
+.main-container .navigation .slider-grid .slider-box p{
     color:#ffffff;
     font-size: 16px;
     /*  */
@@ -106,7 +111,7 @@
     font-weight: normal;
     margin-bottom: 20px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-box button{
+.main-container .navigation .slider-grid .slider-box button{
     background-color: #9c1a1e;
     color: #ffffff;
     font-size: 16px;
@@ -122,14 +127,14 @@
     cursor: pointer;
     margin-top: 20px;
 }/*
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two{
+.main-container .navigation .slider-grid .slider-two{
     background-color: rgba(0, 0, 0, 0.5);
     height: 284px;
     display: grid;
     grid-template-rows: 58px 100px auto ;
     grid-gap: 36px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two:hover{
+.main-container .navigation .slider-grid .slider-two:hover{
     background-color: rgba(0, 0, 0, 0.5);
     height: 284px;
     display: grid;
@@ -140,7 +145,7 @@
     
     width: 320px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two h1{
+.main-container .navigation .slider-grid .slider-two h1{
     color: #ffffff;
     font-size: 20px;
     align-self: flex-end;
@@ -148,13 +153,13 @@
     font-weight: bold;
     padding: 0 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two p{
+.main-container .navigation .slider-grid .slider-two p{
     color:#ffffff;
     font-size: 16px;
     
     padding: 0 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-two button{
+.main-container .navigation .slider-grid .slider-two button{
     background-color: #9c1a1e;
     color: #ffffff;
     font-size: 16px;
@@ -167,14 +172,14 @@
     outline: none;
     padding-left: 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three{
+.main-container .navigation .slider-grid .slider-three{
     background-color: rgba(0, 0, 0, 0.5);
     height: 284px;
     display: grid;
     grid-template-rows: 58px 100px auto ;
     grid-gap: 36px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three:hover{
+.main-container .navigation .slider-grid .slider-three:hover{
     background-color: rgba(0, 0, 0, 0.5);
     height: 284px;
     display: grid;
@@ -186,7 +191,7 @@
     right: 0px;
     width: 320px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three h1{
+.main-container .navigation .slider-grid .slider-three h1{
     color: #ffffff;
     font-size: 20px;
     align-self: flex-end;
@@ -194,13 +199,13 @@
     font-weight: bold;
     padding: 0 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three p{
+.main-container .navigation .slider-grid .slider-three p{
     color:#ffffff;
     font-size: 16px;
     
     padding: 0 40px;
 }
-.main-container .navigation .lorem-ipsum-grid .lorem-ipsum-three button{
+.main-container .navigation .slider-grid .slider-three button{
     background-color: #9c1a1e;
     color: #ffffff;
     font-size: 16px;
@@ -301,8 +306,7 @@
 .main-container .contact{
     background-color: #6d7172;
     height: 330px;
-    padding-top: 50px;
-    
+    padding-top: 50px;    
 }
 .main-container .contact .inner-contact{
     display: grid;
@@ -319,7 +323,6 @@
 .main-container .contact .inner-contact .inner-contact-left h2 span{
     color: #890e12;
 }
-
 .main-container .contact .inner-contact .inner-contact-left p{
     color: #cccccc;
     font-size: 16px;
@@ -444,16 +447,13 @@
 .main-container footer .footer-contact  ul li a{
     text-decoration: none;
     color:#2b2c2d;
-    font-size: 14px;
-    
-    padding:0px 5px;
+    font-size:12px; 
+    padding:0px 4px;
 }
-
 .main-container footer .footer-contact p{
     font-size: 12px;
     color: #999999;
 }
 .main-container footer .footer-contact img{
-    width: 164px;
-    
+    width: 164px;    
 }
