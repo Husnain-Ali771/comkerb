@@ -271,10 +271,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap:20px ;
-    align-items: center;
-    
-  } 
-
+    align-items: center;   
+ } 
 .main-container .banner .banner-paragraph .menu-icon ul li a{
     color: #ee343a;
     text-decoration: none;
